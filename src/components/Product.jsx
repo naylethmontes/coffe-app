@@ -1,7 +1,7 @@
 
 import ProductCard from '../layouts/ProductCard';
 import img1 from '../assets/images/nesss.jpg'
-import img2 from '../assets/images/aero.jpg'
+import img2 from '../assets/images/Aero.jpg'
 import img3 from '../assets/images/che.jpg'
 
 function Product() {
