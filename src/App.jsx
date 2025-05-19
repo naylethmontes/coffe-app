@@ -1,7 +1,7 @@
 
 import Navbar from './components/Navbar'
 import Home from './components/Home'
-import Menu from './components/menu'
+import Menu from './components/Menu'
 import About from './components/About'
 import Product from './components/Product'
 import Review from './components/Review'
