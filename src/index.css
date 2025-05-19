@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+html {
+	scroll-behavior: smooth;
+}
+
+img {
+	width: 300px;
+}
+
+@theme {
+	--bg-color: #fde9cc;
+	--bg-brightColor: #ab6b2e;
+	--color-text-: #eb984e;
+}
+
+.bg-background {
+	background-color: var(--bg-color);
+}
+.bg-brightColor {
+	background-color: var(--bg-brightColor);
+}
+
+.text-brightColor {
+	color: var(--color-text-);
+}
