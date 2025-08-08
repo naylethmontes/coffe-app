@@ -3,8 +3,6 @@ import MenuCard from '../layouts/MenuCard';
 import { v4 as uuidv4 } from 'uuid';
 import Dessert from './Desserts';
 
-
-
 const productsCard = [
   {
     id: uuidv4(),
@@ -16,7 +14,7 @@ const productsCard = [
   {
     id: uuidv4(),
     name: 'Cappuccino',
-    img: '/src/assets/images/Cappuccino.jpg',
+    img: '/src/assets/images/cappuccino.jpg',
     price: 2.5,
     temperature: 'Frio'
   },
@@ -44,7 +42,7 @@ const productsCard = [
   {
     id: uuidv4(),
     name: 'Doppio',
-    img: '/src/assets/images/Doppio.jpg',
+    img: '/src/assets/images/doppio.jpg',
     price: 3.5,
     temperature: 'Frio'
   }
