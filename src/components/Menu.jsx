@@ -3,7 +3,7 @@ import MenuCard from '../layouts/MenuCard';
 import { v4 as uuidv4 } from 'uuid';
 import Dessert from './Desserts';
 import espressoImg from '../assets/images/espresso.jpg'
-import capuccinoImg from '../assets/images/cappuccino.jpg'
+import cappuccinoImg from '../assets/images/cappuccino.jpg'
 import latteImg from '../assets/images/latte.jpg'
 import americanoImg from '../assets/images/americano.jpg'
 import machiatoImg from '../assets/images/machiato.jpg'
@@ -20,7 +20,7 @@ const productsCard = [
   {
     id: uuidv4(),
     name: 'Cappuccino',
-    img: capuccinoImg,
+    img: cappuccinoImg,
     price: 2.5,
     temperature: 'Frio'
   },
