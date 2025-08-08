@@ -2,12 +2,12 @@ import { useEffect } from 'react';
 import MenuCard from '../layouts/MenuCard';
 import { v4 as uuidv4 } from 'uuid';
 import Dessert from './Desserts';
-import espressoImg from '../assets/images/espresso.jpg'
+import espressoImg from '../assets/images/espress.jpg'
 import cappuccinoImg from '../assets/images/cappu.jpg'
 import latteImg from '../assets/images/latte.jpg'
 import americanoImg from '../assets/images/americano.jpg'
 import machiatoImg from '../assets/images/machiato.jpg'
-import doppioImg from '../assets/images/doppio.jpg'
+import doppioImg from '../assets/images/dopp.png'
 
 const productsCard = [
   {
