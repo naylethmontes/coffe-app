@@ -2,47 +2,53 @@ import { useEffect } from 'react';
 import MenuCard from '../layouts/MenuCard';
 import { v4 as uuidv4 } from 'uuid';
 import Dessert from './Desserts';
+import espressoImg from '../assets/images/espresso.jpg'
+import capuccinoImg from '../assets/images/cappuccino.jpg'
+import latteImg from '../assets/images/latte.jpg'
+import americanoImg from '../assets/images/americano.jpg'
+import machiatoImg from '../assets/images/machiato.jpg'
+import doppioImg from '../assets/images/doppio.jpg'
 
 const productsCard = [
   {
     id: uuidv4(),
     name: 'Espresso',
-    img: '/src/assets/images/espresso.jpg',
+    img: espressoImg,
     price: 3.5,
     temperature: 'Caliente'
   },
   {
     id: uuidv4(),
     name: 'Cappuccino',
-    img: '/src/assets/images/cappuccino.jpg',
+    img: capuccinoImg,
     price: 2.5,
     temperature: 'Frio'
   },
   {
     id: uuidv4(),
     name: 'Latte',
-    img: '/src/assets/images/latte.jpg',
+    img: latteImg,
     price: 2.5,
     temperature: 'Caliente'
   },
   {
     id: uuidv4(),
     name: 'Americano',
-    img: '/src/assets/images/americano.jpg',
+    img: americanoImg,
     price: 1.5,
     temperature: 'Frio'
   },
   {
     id: uuidv4(),
     name: 'Macchiato',
-    img: '/src/assets/images/machiato.jpg',
+    img: machiatoImg,
     price: 3.5,
     temperature: 'Caliente'
   },
   {
     id: uuidv4(),
     name: 'Doppio',
-    img: '/src/assets/images/doppio.jpg',
+    img: doppioImg,
     price: 3.5,
     temperature: 'Frio'
   }
