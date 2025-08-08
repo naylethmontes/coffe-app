@@ -2,111 +2,70 @@ import img1 from '../assets/images/facebook.png'
 import img2 from '../assets/images/instagram.png'
 
 export default function Footer() {
-
-
   return (
-    <div className=" bg-gradient-to-r from-[#FFDCAB] to-[#AB6B2E] text-black   md:mt-0 ">
-      <div className="flex flex-col md:flex-row justify-between p-8 md:px-20 px-5">
-        <div className=" w-full md:w-1/4">
-          <h1 className=" font-semibold text-xl pb-4">Cafe Del campo</h1>
-          <p className=" text-sm">
-            Bienvenido a café del campo que nace lejos del ruido de las grandes ciudades, en las fincas familiares y montañas donde el clima, el suelo y la altitud se combinan para crear granos de una calidad excepcional
-
-          </p>
-
-        </div>
-        <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Links</h1>
-          <nav className=" flex flex-col gap-2">
-            <a
-              className=" hover:text-white transition-all cursor-pointer"
-              href="#menu"
-            >
-              Menu
-            </a>
-            <a
-              className="hover:text-white transition-all cursor-pointer"
-              href="#about"
-            >
-              Sobre nosotros
-            </a>
-            <a
-              className=" hover:text-white transition-all cursor-pointer"
-              href="#products"
-            >
-              Productos
-            </a>
-            <a
-              className=" hover:text-white transition-all cursor-pointer"
-              href="#reviews"
-            >
-              Reseñas
-            </a>
-          </nav>
-        </div>
-        <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Menu</h1>
-          <nav className=" flex flex-col gap-2">
-            <a
-              className=" hover:text-white transition-all cursor-pointer"
-              href="/"
-            >
-              Cappuccino
-            </a>
-            <a
-              className=" hover:text-white transition-all cursor-pointer"
-              href="/"
-            >
-              Latte
-            </a>
-            <a
-              className=" hover:text-white transition-all cursor-pointer"
-              href="/"
-            >
-              Americano
-            </a>
-          </nav>
-        </div>
-        <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Contacto</h1>
-          <nav className=" flex flex-col gap-2">
-            <a
-              className=" hover:text-white transition-all cursor-pointer"
-              href="/"
-            >
-              cafedelcampo@gmail.com
-            </a>
-            <a
-              className=" hover:text-white transition-all cursor-pointer"
-              href="/"
-            >
-              +57 315 678 5454
-            </a>
-            <a
-              className=" hover:text-white transition-all cursor-pointer"
-              href="/"
-            >
-              Redes sociales
-            </a>
-            <div className="flex gap-5 mx-auto w-10 h-10 justify-center ml-6 cursor-pointer">
-              <img src={img1} alt="Facebook" />
-              <img src={img2} alt="Instagram" />
-            </div>
-          </nav>
-        </div>
-      </div>
-      <div>
-        <div>
-          <p className=" text-center py-4">
-            &copy; 2025,
-            <span className=" text-backgroundColor">
-              {" "}
-              Cafe del Campo{" "}
-            </span>
-            | Todos los derechos reservados
+    <footer className="bg-gradient-to-br from-[#fffaf4] via-[#f2e1c3] to-[#c8a97e] text-[#3e2f1c]">
+      <div className="flex flex-col md:flex-row justify-between gap-12 px-6 md:px-20 py-12">
+        {/* Marca */}
+        <div className="md:w-1/4">
+          <h1 className="text-2xl font-bold mb-4">Café Montes</h1>
+          <p className="text-sm leading-relaxed">
+            Bienvenido a Café Montes, donde el silencio de las montañas y la tradición familiar se combinan para ofrecerte granos de café de la más alta calidad.
           </p>
         </div>
+
+        {/* Enlaces */}
+        <div>
+          <h2 className="text-lg font-semibold mb-4">Enlaces</h2>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#menu" className="hover:text-[#84563c] transition">Menú</a></li>
+            <li><a href="#about" className="hover:text-[#84563c] transition">Sobre nosotros</a></li>
+            <li><a href="#products" className="hover:text-[#84563c] transition">Productos</a></li>
+            <li><a href="#reviews" className="hover:text-[#84563c] transition">Reseñas</a></li>
+          </ul>
+        </div>
+
+        {/* Recomendados */}
+        <div>
+          <h2 className="text-lg font-semibold mb-4">Recomendados</h2>
+          <ul className="space-y-2 text-sm">
+            <li><a href="/" className="hover:text-[#84563c] transition">Cappuccino</a></li>
+            <li><a href="/" className="hover:text-[#84563c] transition">Latte</a></li>
+            <li><a href="/" className="hover:text-[#84563c] transition">Americano</a></li>
+          </ul>
+        </div>
+
+        {/* Contacto */}
+        <div>
+          <h2 className="text-lg font-semibold mb-4">Contacto</h2>
+          <ul className="space-y-2 text-sm">
+            <li><a href="mailto:cafemontes@gmail.com" className="hover:text-[#84563c] transition">cafemontes@gmail.com</a></li>
+            <li><a href="tel:+573156785454" className="hover:text-[#84563c] transition">+57 315 678 5454</a></li>
+          </ul>
+          <div className="flex gap-4 mt-5 w-30 h-10">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img
+                src={img1}
+                alt="Facebook"
+                className=" rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-transform"
+              />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img
+                src={img2}
+                alt="Instagram"
+                className=" rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-transform"
+              />
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+
+      {/* Copyright */}
+      <div className="border-t border-[#e0c5a2] mt-6">
+        <p className="text-center text-sm py-5">
+          &copy; 2025 <span className="font-semibold">Café Montes</span> | Todos los derechos reservados
+        </p>
+      </div>
+    </footer>
   );
 }

@@ -22,26 +22,35 @@ function ReviewCard({ img, title, comment, rating }) {
     )
   }
 
-
   return (
-    <div id='reviews'
-      className=" flex flex-col w-full lg:w-2/6 bg-white p-3 rounded-lg gap-5">
-      <div className=" flex flex-row items-center lg:justify-start justify-center">
+    <div
+      id="reviews"
+      className="flex flex-col w-full lg:w-2/6 bg-white/80 border border-[#e8ddd3] shadow-md hover:shadow-lg p-4 rounded-2xl gap-5 transition-all duration-300"
+    >
+      <div className="flex flex-row items-center lg:justify-start justify-center">
         <div className="w-1/4">
-          <img className=" rounded-full" src={img} alt="title" />
+          <img
+            className="rounded-full border border-[#d6c4b4] shadow-sm object-cover"
+            src={img}
+            alt={title}
+          />
         </div>
-        <div className=" mx-3">
-          <h2 className=" font-semibold text-lg">{title}</h2>
-          <div className=" flex">{renderStars()}</div>
+
+        <div className="mx-3">
+          <h2 className="font-semibold text-lg text-[#4b3729]">{title}</h2>
+          <div className="flex">{renderStars()}</div>
         </div>
-        <span className=" ml-16">
-          <FaQuoteRight className=" text-brightColor" size={42} />
+
+        <span className="ml-auto pr-2 text-[#b38358]">
+          <FaQuoteRight size={32} />
         </span>
       </div>
-      <p className='text-center'>
-        {comment}
+
+      <p className="text-center text-[#5e4535] text-sm leading-relaxed italic">
+        “{comment}”
       </p>
     </div>
   );
 }
-export default ReviewCard
+
+export default ReviewCard;

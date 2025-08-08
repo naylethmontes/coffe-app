@@ -31,12 +31,14 @@ const reviews = [
 export default function Review() {
 
   return (
-    <div className=" min-h-screen flex flex-col justify-center lg:px-32 px-5 bg-background ">
-      <h1 className=" font-semibold text-center text-4xl lg:mt-14 mt-24 ">
+    <div
+      className="min-h-screen w-full flex flex-col justify-center px-4 sm:px-8 md:px-12 lg:px-32 bg-gradient-to-b from-[#f4e9dd] via-[#e9c9a3] to-[#d69155] animate-fade-in"
+    >
+      <h1 className="font-semibold text-center text-4xl lg:mt-14 mt-24 text-[#3e2f23]">
         Comentarios de los clientes
       </h1>
 
-      <div className=" flex flex-col lg:flex-row gap-5 justify-center py-4 my-8">
+      <div className="flex flex-col lg:flex-row gap-5 justify-center py-4 my-8 flex-wrap">
         {reviews.map((review) => (
           <ReviewCard
             key={review.id}
@@ -46,7 +48,6 @@ export default function Review() {
             rating={review.rating}
           />
         ))}
-
       </div>
     </div>
   );

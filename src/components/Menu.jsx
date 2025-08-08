@@ -1,27 +1,72 @@
-
+import { useEffect } from 'react';
 import MenuCard from '../layouts/MenuCard';
-import img1 from '../assets/images/espresso.jpg';
-import img2 from '../assets/images/Cappuccino.jpg';
-import img3 from '../assets/images/americano.jpg';
-import img4 from '../assets/images/latte.jpg';
-import img5 from '../assets/images/machiato.jpg';
-import img6 from '../assets/images/Doppio.jpg';
+import { v4 as uuidv4 } from 'uuid';
+import Dessert from './Desserts';
+
+
+
+const productsCard = [
+  {
+    id: uuidv4(),
+    name: 'Espresso',
+    img: '/src/assets/images/espresso.jpg',
+    price: 3.5,
+    temperature: 'Caliente'
+  },
+  {
+    id: uuidv4(),
+    name: 'Cappuccino',
+    img: '/src/assets/images/Cappuccino.jpg',
+    price: 2.5,
+    temperature: 'Frio'
+  },
+  {
+    id: uuidv4(),
+    name: 'Latte',
+    img: '/src/assets/images/latte.jpg',
+    price: 2.5,
+    temperature: 'Caliente'
+  },
+  {
+    id: uuidv4(),
+    name: 'Americano',
+    img: '/src/assets/images/americano.jpg',
+    price: 1.5,
+    temperature: 'Frio'
+  },
+  {
+    id: uuidv4(),
+    name: 'Macchiato',
+    img: '/src/assets/images/machiato.jpg',
+    price: 3.5,
+    temperature: 'Caliente'
+  },
+  {
+    id: uuidv4(),
+    name: 'Doppio',
+    img: '/src/assets/images/Doppio.jpg',
+    price: 3.5,
+    temperature: 'Frio'
+  }
+];
 
 function Menu() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 bg-background">
-      <h1 className=" font-semibold text-center text-4xl mt-24 mb-8">
-        Nuestro menu
+    <div className="min-h-screen w-full flex flex-col justify-center px-4 sm:px-8 md:px-12 lg:px-32 bg-gradient-to-b from-[#f4e9dd] via-[#e9c9a3] to-[#d69155] animate-fade-in">
+      <h1 className="font-semibold text-center text-4xl mt-24 mb-10 text-brown-900 drop-shadow-sm">
+        Nuestro menú ☕
       </h1>
 
-      <div className=" flex flex-wrap pb-8 gap-8 justify-center ">
-        <MenuCard img={img1} title="Espresso" />
-        <MenuCard img={img2} title="Cappuccino" />
-        <MenuCard img={img3} title="Latte" />
-        <MenuCard img={img4} title="Americano" />
-        <MenuCard img={img5} title="Macchiato" />
-        <MenuCard img={img6} title="Doppio" />
+      <div className="flex flex-wrap gap-8 justify-center pb-20">
+        {productsCard.map((product) => (
+          <MenuCard key={product.id} product={product} />
+        ))}
       </div>
+      <Dessert />
     </div>
   );
 }
